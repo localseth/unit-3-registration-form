@@ -5,3 +5,48 @@
 footer p{
     font-style: italic;
 }
+
+.page-wrapper {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0.125rem 0.25rem 0.25rem;
+}
+
+
+select:required:invalid {
+  color: gray;
+}
+
+option {
+  color: black;
+}
+
+.container > * {
+    background-color: beige;
+    margin: 0.125rem 0.25rem 0.25rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.inline {
+    align-self:stretch;
+}
+
+.inline-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
