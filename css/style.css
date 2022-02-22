@@ -1,52 +1,226 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+footer {
+    height: 8vh;
+    min-height: 75px;
 }
 
 footer p{
     font-style: italic;
+    font-weight: 200;
+    font-size: 0.825rem;
 }
 
-.page-wrapper {
-    padding: 0.25rem 0.5rem;
+
+.main-container {
+    padding: 0.25rem 1.5rem;
     display: flex;
     flex-flow: column wrap;
+    margin: 0 auto;
 }
 
-.container {
+.bigflex {
     display: flex;
-    flex-flow: column wrap;
-    padding: 0.125rem 0.25rem 0.25rem;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
+body {
+    margin: 0;
+}
+
+/*
+main:first-child {
+    margin: 1.25rem 0rem 0rem;
+}
+*/
+
+header {
+    background-color: #2d3945;
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto 2rem;
+    padding: 1rem 0rem;
+}
+
+/* Form element styles ---------- */
+form {
+    border-top: 0.25rem solid black;
+    padding: 0.625rem 0rem 0rem;
+    margin-top: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    border-top: 0.125rem solid black;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    width: 100%;
+}
+
+legend {
+    float: left;
+    display: flex;
+    align-self: flex-start;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 1.25rem 0rem;
+    padding: 0.5rem 0rem 0rem;
+    color: #202124;
+}
+
+textarea {
+    height: 7rem !important;
+    width: 100%;
+}
+
+textarea:last-of-type, input[type=submit]:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=submit], select, textarea {
+    margin: 0.5rem 0rem 2.5rem;
+    width: 100%;
+    height: 3rem;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border: 10px;
+    box-shadow: 0px 0px 9px inset rgba(0,0,0,0.08);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-left: 0px;
+}
+
+input[type=submit] {
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+label {
+    font-family: 'Roboto Serif', sans-serif;
+    color: dimgray;
+    font-weight: 400;
+    font-size: 1rem;
+}
 
 select:required:invalid {
-  color: gray;
+  color: lightgray;
 }
 
 option {
   color: black;
 }
 
+#zip {
+    width: 25%;
+    min-width: 10rem;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+input:focus::placeholder, select:focus:invalid {
+    font-size: initial;
+}
+
+input:focus, select:focus{
+    height: 4.25rem;
+    transition-duration: 0.25s;
+    border: 2px solid #46698b;
+    box-shadow: none;
+    font-size: 1.25rem;
+}
+
+input[type=checkbox]:focus, input[type=radio]:focus {
+    height: inherit;
+}
+
+/* End form element styles ----------- */
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+/*    padding: 0.125rem 0.25rem 0.25rem;*/
+    align-items: flex-start;
+    padding: 0;
+    margin: 0.125rem 0rem 0rem;
+    width: 100%;
+}
+
+
+/*
 .container > * {
     background-color: beige;
-    margin: 0.125rem 0.25rem 0.25rem;
 }
+*/
+
+
 
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Roboto Serif', sans-serif;
+    text-align: center;
+    width: auto;
+}
+
+h2, h3, h4 {
+    line-height: 2.25rem;
+    margin: 0.5rem 0.25rem 0rem;
+    font-weight: 600;
+    color: #202124;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.25rem;
+    margin: 0.25rem 0.125rem 0rem;
+    font-weight: 200;
+    color: darkgray;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class="container center"] {
+   margin-bottom: 2rem; 
+}
+
+
+.bottom-margin {
+    margin-bottom: 1rem;
 }
 
 .inline {
-    align-self:stretch;
+    display: inline-block;
+    margin: 0.5rem 0rem;
 }
 
 .inline-container {
     width: auto;
     height: auto;
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex-flow: column nowrap;
+    margin-bottom: 2rem;
 }

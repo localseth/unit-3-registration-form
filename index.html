@@ -7,17 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Signup for our newsletter</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,200;0,400;0,600;1,200&display=swap" rel="stylesheet">
+            </head>
 <body>
-    <div class="page-wrapper">
+    
         <header>
+            <div class="main-container">
             <h1>THE CODE REVIEW</h1>
+            </div>
         </header>
-        <main>
+        <main class="main-container">
+            <div class="container center">
             <h2>Signup for our newsletter</h2>
-            <p>Get the latest new on how your code is doing right in your inbox</p>
-            
-            <form>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <form class="container">
                 <fieldset class="container">
                     <legend>Contact Information</legend>
                     
@@ -98,41 +104,47 @@
                 
                 <fieldset class="container">
                     <legend>Newsletter</legend>
-                    <label>Select the newsletters you would like to receive</label>
-                    
-                    <ul>
-                        <li>
+                    <label class="bottom-margin">Select the newsletters you would like to receive</label>  
+                    <div class="inline-container">
+                        <div class="inline">
                             <input type="checkbox" id="html" value="html" name="user-newsletters">
                             <label for="html">HTML News</label>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="inline">
                             <input type="checkbox" id="css" value="css" name="user-newsletters">
                             <label for="css">CSS News</label>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="inline">
                             <input type="checkbox" id="javascript" value="javascript" name="user-newsletters">
                             <label for="javascript">Javascript News</label>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     
                 
-                    <label>Newsletter format</label>
+                    <label class="bottom-margin">Newsletter format</label>
                     <div class="inline-container">
-                    <input type="radio" id="html-format" value="html" name="email-format" class="inline"><label for="html-format" class="inline">HTML</label>
-                    <input type="radio" id="plain-format" value="plain-text" name="email-format" class="inline">
-                    <label for="plain-format" class="inline">Plain text</label>
-                    
-                    <label for=""></label>
+                        <div class="inline">
+                            <input type="radio" id="html-format" value="html" name="email-format"><label for="html-format">HTML</label>
+                        </div>
+                        <div class="inline">
+                            <input type="radio" id="plain-format" value="plain-text" name="email-format"><label for="plain-format">Plain text</label>
+                        </div>
                     </div>
+                    <div class="container">
+                    <label for="other-topics">Other topics you'd like to hear about</label>
+                        <textarea id="other-topics" name="user-comment"></textarea>
+                    </div>
+                    <input type="submit" value="Sign Up">
                         
                 </fieldset>
             </form>
         </main>
         
         <footer>
-            <p>Copyright The Code Review</p>
+            <div class="main-container">
+                <p>Copyright The Code Review</p>
+            </div>
         </footer>
-    </div>
 
 </body>
 </html>
