@@ -56,21 +56,26 @@ form {
 
 fieldset {
     border: none;
-    border-top: 0.125rem solid black;
     margin: 0rem;
     padding: 0rem;
     display: flex;
     width: 100%;
 }
 
-fieldset:last-of-type {
+div.end {
     background-color: rgb(240, 240, 219);
     padding: 1rem;
     border-radius: 0px 0px 6px 6px;
 }
 
+div.end, div.start {
+    border-top: 0.125rem solid black;
+    margin: 0.125rem 0 1.75rem;
+    padding-top: 1.5rem;
+}
+
 legend {
-    float: left;
+    /* float: left; */
     display: flex;
     align-self: flex-start;
     font-family: 'Roboto Serif', sans-serif;
@@ -324,13 +329,14 @@ div[class="container center"] {
         width: 100%;
     }
     
-    fieldset:last-of-type {
+    fieldset.end {
         flex-flow: column nowrap;
     }
     
     input[type=text]:focus,
     input[type=email]:focus,
-    input[type=tel]:focus {
+    input[type=tel]:focus,
+    select:focus {
         height: 3rem !important;
         font-size: 1.25rem !important;
         width: 65% !important;
