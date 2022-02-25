@@ -33,12 +33,6 @@ body {
     margin: 0;
 }
 
-/*
-main:first-child {
-    margin: 1.25rem 0rem 0rem;
-}
-*/
-
 header {
     background-color: #2d3945;
     color: aliceblue;
@@ -75,7 +69,6 @@ div.end, div.start {
 }
 
 legend {
-    /* float: left; */
     display: flex;
     align-self: flex-start;
     font-family: 'Roboto Serif', sans-serif;
@@ -210,15 +203,6 @@ select:focus {
     margin: 0.125rem 0rem 0rem;
     width: 100%;
 }
-
-
-/*
-.container > * {
-    background-color: beige;
-}
-*/
-
-
 
 ul {
     list-style-type: none;
